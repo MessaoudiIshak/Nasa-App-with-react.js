@@ -43,12 +43,12 @@ npm run dev
 
 ---
 
+
 ## Live Demo
 
 You can try the app online without installing anything:
 
-<!-- Add your deployed app link below if available -->
-<!-- Example: [Live Demo](https://your-nasa-apod-demo-link.com/) -->
+[Live Demo](https://astronomypifromnasa.netlify.app/)
 
 ---
 
