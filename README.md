@@ -1,16 +1,61 @@
-# React + Vite
+# Astronomy Picture of the Day (APOD) Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple project built with **React** and **Vite** that fetches NASA's Astronomy Picture of the Day (APOD) API.
 
-Currently, two official plugins are available:
+It allows you to:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- View today’s astronomy picture or video
+- See the title, date, and explanation
+- Open a sidebar for more details
 
-## React Compiler
+All data is stored in **localStorage** for the current day to reduce API calls and improve load speed.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Feature               | Description                                                    |
+|-----------------------|----------------------------------------------------------------|
+| View Today’s APOD     | Displays the latest astronomy picture or video                 |
+| Sidebar Details       | Click the info button to see the title, date, and explanation  |
+| Persistent Daily Data | Data is cached in localStorage for the day                     |
+| Loading State         | Shows a spinner while fetching data from NASA API              |
+| Error Handling        | Shows a message if the API fails or is unreachable             |
+
+---
+
+## Run the App Locally
+
+1. Clone the repository and navigate into the project directory.
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Start the development server:
+
+```bash
+npm run dev
+```
+
+4. Open your browser to the URL shown in the terminal (commonly http://localhost:5173).
+
+---
+
+## Live Demo
+
+You can try the app online without installing anything:
+
+<!-- Add your deployed app link below if available -->
+<!-- Example: [Live Demo](https://your-nasa-apod-demo-link.com/) -->
+
+---
+
+## Disclaimer
+
+The app relies on NASA’s public API. Occasionally, the API may fail or respond slowly, which could cause the image/video not to load.
+
+In that case, try refreshing the page or wait a few moments for the API to respond.
+
+Data is cached per day, so once loaded, it will remain available in your browser until the next day.
